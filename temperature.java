@@ -1,8 +1,8 @@
 class temperature
 {
     double temp;double celsius;// instance vars
-    temperature(double temp)//taking temp in fahrenheit
-    {this.temp= temp;
+    temperature(double tempe)//taking temp in fahrenheit
+    {temp= tempe;
      }
     void calc()// converting to celsius
     {

@@ -17,7 +17,7 @@ public class account
             if(amt<=balance)
             {
             balance-=amt;
-             System.out.println("withdrawal amt "+ amt);
+             System.out.println("withdrawal amt= "+ amt);
         }
         else
         {
@@ -26,9 +26,9 @@ public class account
         double getBalance()
         { return balance;}
         
-        public static void main(String name, long acc_no)
+        public static void main(String name, long acc_no, String type)
         {
-             System.out.println("name="+ name +"\n account no.="+ acc_no);
+             System.out.println("name="+ name +"\n account no.="+ acc_no+"\ntype of account="+type);
             account my_acc = new account();//creating an empty and new account
             my_acc.startAccount(1000.0);
              my_acc.deposit(250.0);// depositing savings

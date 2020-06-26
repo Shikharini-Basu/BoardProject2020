@@ -26,10 +26,8 @@ else if( taxincome>250000)
 }
 void display()
 {
-    System.out.println("name="+ name);
-    System.out.println("private account no.="+ pan);
-    System.out.println("tax-income="+ taxincome);
-    System.out.println("tax="+ tax);
+    System.out.println(" PAN number\tName\tTax-income\tTax");
+    System.out.println( pan+"    \t"+name+"  \t"+taxincome+"  \t"+tax);
 }
 public static void main(String args[])
 {
