@@ -14,8 +14,7 @@ class ToAscii
         System.out.println("The ASCII value of z is=" + ascz);
     }
 }
-public class Try
-{
+public class Try1
 public static void main(String args[])
 {
     ToAscii object1;
