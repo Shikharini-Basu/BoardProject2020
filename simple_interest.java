@@ -15,7 +15,7 @@ class simple_interest
         simple_interest obj=new simple_interest();
         obj.init(5.0,2000.0,2.5);
         double si= obj.calc();
-        System.out.println(" simple interest="+si);
+        System.out.println(" simple interest="+si);//System.out.println(obj.calc()); can also be used
     }
 }
  

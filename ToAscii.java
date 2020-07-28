@@ -13,13 +13,13 @@ class ToAscii
         System.out.println("The ASCII value of a is=" + asca);
         System.out.println("The ASCII value of z is=" + ascz);
     }
-}
-public class Try1
-public static void main(String args[])
+public class Try2{
+private  void main(String args[])
 {
     ToAscii object1;
     object1=new ToAscii();
     object1.dispASCII();
+}
 }
 }
 
