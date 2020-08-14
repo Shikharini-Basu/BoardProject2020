@@ -1,9 +1,9 @@
-// counting no. of digits
+// sum of digits
 import java.util.Scanner;
-public class nodigit
+public class sumdigit
 {
     Scanner sc= new Scanner(System.in);
-    int n; int rem=0, rev=0;
+    int n; int rem=0, rev=0;int sum;
     void getData()
     { System.out.println(" enter your no.");
         n=sc.nextInt();
@@ -12,15 +12,14 @@ public class nodigit
     { while(n!=0)
         {
             rem=n%10;
-            rev=rev+1;
+            sum=sum+rem;
             n=n/10;
         }
-      System.out.println("no. of digits="+rev); 
+      System.out.println("sum of digits="+sum); 
     }
     public static void main()
-    { nodigit obj=new nodigit();
+    { sumdigit obj=new sumdigit();
         obj.getData();
         obj.calc();
     }
 }
- 
