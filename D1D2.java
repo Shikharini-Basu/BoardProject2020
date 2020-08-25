@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class digit_check
+public class D1D2
 { Scanner sc= new Scanner(System.in);
     int n;  int rem1,rem2;
     void getdata()
@@ -14,10 +14,10 @@ public class digit_check
             rem2=n%10;
             n=n/10;
         }
-        System.out.println(rem2 +"\n"+ rem1);
+        System.out.println(rem2 + rem1);
     }   
 public static void main()
-{ digit_check obj= new digit_check();
+{ D1D2 obj= new D1D2();
     obj.getdata();
     obj.calc();
     
