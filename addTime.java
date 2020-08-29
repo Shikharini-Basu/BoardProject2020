@@ -17,7 +17,7 @@ public class addTime
         addTime t2= new addTime();
         addTime t3= new addTime();
         t1.input(2,50);//obj1 can also be used
-        t2.input(3,50);
+        t2.input(3,40);
         t3.addTime(t1,t2);
         t3.display();
     }

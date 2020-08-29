@@ -19,31 +19,35 @@ public class scCalc
         n3=n1/n2;
         System.out.println("div="+n3);
     }
-        public static void main()
+    void accept()
+    {System.out.println("enter n1");
+             Scanner sc= new Scanner(System.in);
+            n1= sc.nextInt();
+            System.out.println("enter n2");
+             n2= sc.nextInt();
+           System.out.println("enter a ch");
+            ch= sc.next().charAt(0);
+         
+    }
+    public static void main()
         {
             scCalc obj= new scCalc();
-            System.out.println("enter n1");
-             Scanner scCalc= new Scanner(System.in);
-            obj.n1= scCalc.nextInt();
-            System.out.println("enter n2");
-             obj.n2= scCalc.nextInt();
-           System.out.println("enter a ch");
-            char ch= scCalc.next().charAt(0);
-            
-    if(ch=='+')
+            obj.accept();
+             Scanner sc= new Scanner(System.in);
+     if(obj.ch=='+')
         { obj.add();
         }
-        else if(ch=='-')
+        else if(obj.ch=='-')
         { obj.sub();
         }
-        else if(ch=='*')
+        else if(obj.ch=='*')
         { obj.mul();
         }
-        else if(ch=='/')
+        else if(obj.ch=='/')
         { obj.div();
         }
         else
         { System.out.println("invalid char");
         }
-}     
+    }     
 }

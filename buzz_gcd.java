@@ -11,7 +11,7 @@ public class buzz_gcd
     {    System.out.println("enter no. you want to check");
         int n=sc.nextInt();
         int rem=n%10;
-        if(n/7==0 || rem==7)
+        if(n%7==0 || rem==7)
         {  System.out.println(n+" is a buzz no.");
         }
         else {System.out.println(n+" is not a buzz no.");}
@@ -33,9 +33,8 @@ public class buzz_gcd
         
         int lcm=(a*b)/gcd;//additional for info
         System.out.println(lcm+" is the LCM of the 2 nos.");
-    
-}
-    public static void main()
+    }
+     public static void main()
     { 
        Scanner sc=new Scanner(System.in); 
      buzz_gcd obj= new  buzz_gcd();
