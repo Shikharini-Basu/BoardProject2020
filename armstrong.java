@@ -2,14 +2,15 @@ import java.util.Scanner;
 public class armstrong
 {
     Scanner sc= new Scanner(System.in);
-    int n; int sum;
+    int n; int sum;int T2; 
     void getData()
     { System.out.println(" enter your no.");
         n=sc.nextInt();
+        T2=n;
     }
     void calc()
     {
-       int rem; int T2=n;
+       int rem;
         while(T2!=0)
         {
             rem=T2%10;
