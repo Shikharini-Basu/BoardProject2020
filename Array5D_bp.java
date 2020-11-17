@@ -1,7 +1,7 @@
 // board project question
 import java.util.Scanner;
 public class Array5D_bp
-    { public static void main()
+    {    public static void main()
         { Scanner sc=new Scanner(System.in);
             System.out.println(" enter no. of students");
             int n=sc.nextInt();
@@ -10,18 +10,20 @@ public class Array5D_bp
             int m1[]= new int[n];
             int m2[]= new int[n];
             int m3[]= new int[n];
-            for(int i=0; i<50;i++)
-            { System.out.println("enter name");
-                name[i]=sc.nextLine();
+            for(int i=0; i<n;i++)
+            { 
+          
+                System.out.println("enter name");
+                name[i]=sc.next();
                 System.out.println(" enter roll no.");
                 roll[i]=sc.nextInt();
                 System.out.println(" enetr marks of 3 subjects");
                 m1[i]=sc.nextInt();
                   m2[i]=sc.nextInt();
                     m3[i]=sc.nextInt();
-                }
-               for(int i=0; i<50;i++)
-               { double avg= (m1[i]+m2[i]+m3[i])/3.0;
+                
+               
+                double avg= (m1[i]+m2[i]+m3[i])/3.0;
                    if(avg<=100.0 && avg>=85.0)
                    { System.out.println("EXCELLENT");
                     }
