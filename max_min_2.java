@@ -13,17 +13,21 @@ class max_min_2
          x=sc.nextInt();
     }
     void display()
-    {   int fmax=0; int max=0,min=0;int  fmin=0;
+    {   int fmax=0; int max=0,min=0;int  fmin=-1;
         for(int i=0; i<=arr.length-1; i++)
          {  
              if(arr[i]% x==0)
              { fmax=arr[i];
-                 fmin=arr[i];}
+                 
+                min=arr[i];}
                  if(fmax>max)
                  max=fmax;
-                
-        }
-        System.out.println(fmax);}
+                 if(fmin<min)
+                 {fmin=min;
+                  min=fmin;
+                     }}
+        System.out.println(fmax+"\n"+fmin);}
+    
     public static void main()
     { max_min_2 obj= new max_min_2();
         obj.init();
