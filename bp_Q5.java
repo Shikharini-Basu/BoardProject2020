@@ -1,6 +1,3 @@
-
-
-
 import java.util.Scanner;
 public class bp_Q5
 {
@@ -13,9 +10,9 @@ public class bp_Q5
     }
     void calc()
     {
-        for( int i=1;i<=n;i++)
+        for( int i=1;i<=n;i++)// no. of rows
         {
-            for( int j=0; j<=(n-i) ; j++)
+            for( int j=0; j<=(n-i) ; j++)// row no.
             {
                 System.out.print("5 ");
             }

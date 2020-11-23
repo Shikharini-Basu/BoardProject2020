@@ -13,11 +13,11 @@ rows=n;
 }
 void calc()
 { 
-    for( int i=1;i<=rows;i++)
+    for( int i=1;i<=rows;i++)// no. of rows
 {
-    for(int j=0; j<=(rows-i); j++)
+    for(int j=0; j<=(rows-i); j++)// columns
 {
-     System.out.print((int)(c-j)+" ");
+     System.out.print((int)(c-j)+" ");// printing after calculating
     }
       System.out.println();
     }

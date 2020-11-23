@@ -17,7 +17,7 @@ public class q5_b_pattern
         {
             for( int j=0; j<=(rows-i) ; j++)
             {
-                System.out.print((char)(c+j)+" ");
+                System.out.print((char)(c+j)+" ");// calculating and printing
             }
               System.out.println();
             }
