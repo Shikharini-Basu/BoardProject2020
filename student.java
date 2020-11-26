@@ -9,29 +9,48 @@ Average Marks Stream
 Write a program to declare the class, ‘Student’, and define the method of
 allotment of subjects*/
 
+import java.util.Scanner;
 public class student
-{
-    public static void main(String name,double math,double sci,double eng,double hindi,double hcg,int rno)
-    {
-        System.out.println("Name of the student="+ name+"\nroll no.="+rno);
-         System.out.println("math="+math+"\nscience="+sci+"\nenglish="+eng+"\nhindi"+hindi+"\nhistory,civics and geography="+hcg);
-        double total= math+sci+eng+hindi+hcg;
-        double avg=total/5.0;
-        double percentage=(total/500.0)*100;//assuming marks out of hundred
-         System.out.println("percentage="+percentage);
-        if( percentage>=90)
+{   String name;double math;double sci;double eng;double hindi;double hcg;int rno;
+    void init()
+    { Scanner sc=new Scanner(System.in);
+        System.out.println("Name of the student=");
+        name=sc.nextLine();
+        System.out.println("roll no.=");
+        rno=sc.nextInt();
+        System.out.println("enter marks of 5 subjects");
+        math=sc.nextInt();
+        sci=sc.nextInt();
+        eng=sc.nextInt();
+        hindi=sc.nextInt();
+        hcg=sc.nextInt();
+    }
+    void compute()
+    {    double total= math+ sci+ eng+ hindi+ hcg;
+        double avg=total/5.0;//assuming marks out of hundred
+        System.out.println(avg);
+        if(avg>=90)
         {  System.out.println("science with computers");
         }
-            else if( percentage>=70 &&  percentage<=79)
+            else if( avg>=70 && avg<=79)
             {  System.out.println("commerce with maths");
         } 
-           else if( percentage>=60 &&  percentage<=69)
+           else if( avg>=60 &&  avg<=69)
             {  System.out.println("commerce without maths");
         } 
                
-             else if( percentage>=80 &&  percentage<=89)
+             else if( avg>=80 && avg<=89)
                 {System.out.println(" science without computers");
                 }
+                else
+                return;
+    }
+    public static void main()
+    {
+        student obj=new student();
+        obj.init();
+        obj.compute();
+         
             }
         }
         

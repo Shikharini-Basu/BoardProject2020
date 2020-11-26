@@ -1,23 +1,27 @@
 // board project question
 import java.util.Scanner;
 public class Array5D_bp
-    {    public static void main()
-       { Scanner sc=new Scanner(System.in);
+    {  int n;int[] roll; int[] m1; int[] m2; int[] m3; String[] name;
+       void init()
+        { Scanner sc=new Scanner(System.in);
             System.out.println(" enter no. of students");
-            int n=sc.nextInt();
-            String name[]= new String[n];// creating arrays
-            int roll[]= new int[n];
-            int m1[]= new int[n];
-            int m2[]= new int[n];
-            int m3[]= new int[n];
+             n=sc.nextInt();
+             name= new String[n];// creating arrays
+             roll= new int[n];
+             m1= new int[n];
+             m2= new int[n];
+             m3= new int[n];
+        }
+        void compute()
+       {   
             for(int i=0; i<n;i++)
             { 
-          
+                Scanner sc=new Scanner(System.in);
                 System.out.println("enter name");// enetring the inputs
                 name[i]=sc.next();
                 System.out.println(" enter roll no.");
                 roll[i]=sc.nextInt();
-                System.out.println(" enetr marks of 3 subjects");
+                System.out.println(" enter marks of 3 subjects");
                 m1[i]=sc.nextInt();
                   m2[i]=sc.nextInt();
                     m3[i]=sc.nextInt();
@@ -40,5 +44,9 @@ public class Array5D_bp
                     }
                 }
             }
+            public static void main()
+            { Array5D_bp obj= new Array5D_bp();
+                obj.init();
+                obj.compute();
         }
-        
+ }

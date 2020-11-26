@@ -1,8 +1,3 @@
-
-
-
-
-
 //board paper 2005
 public class employee2
 {

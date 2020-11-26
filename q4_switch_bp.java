@@ -1,7 +1,7 @@
 public class q4_switch_bp
-{
-    public static void main(char ch, double P,double r, int n,double mp,double rd_rate, int time_in_months)
-    {
+{   
+    public static void main(char ch, double P,double r, int n)
+    { int time_in_months;
         switch(ch)
         {
             case 'T':
@@ -10,7 +10,8 @@ public class q4_switch_bp
             System.out.println("amount="+ Amt);
             break;
             case 'R':
-            double A= mp* time_in_months + (mp*time_in_months*(time_in_months +  1)/2.0) * ( rd_rate/100.0)*(1/12.0);/* interest
+            time_in_months=n*12;
+            double A= P* time_in_months + (P*time_in_months*(time_in_months +  1)/2.0) * ( r/100.0)*(1/12.0);/* interest
             calculation for 2nd case*/
             System.out.println("maturity amount="+ A);
             break;
