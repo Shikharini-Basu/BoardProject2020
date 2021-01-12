@@ -18,11 +18,12 @@ class bubble_1
                 { temp=arr[j];
                     arr[j]=arr[j+1];
                     arr[j+1]=temp;
-                }}}
+                }}
                 System.out.println("Pass/Iteration:"+(j+1)+"=>"+ arr[j]);
                
                 
-      }
+      }}
+    
     public static void main()
     { bubble_1 obj= new bubble_1();
         obj.init();

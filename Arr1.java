@@ -11,12 +11,12 @@ class Arr1
         }
     }
     void display()
-    { int total,sum=0; double avg;
+    { int sum=0; double avg;
         for(int i=0; i<=arr.length-1; i++)
          {  sum=sum+arr[i];}
-             total=sum;
-             avg=(double)(total/(arr.length));
-              System.out.println(total+"\n"+avg);
+             
+             avg=sum/5.0;
+              System.out.println(sum+"\n"+avg);
         }
     public static void main()
     { Arr1 obj= new Arr1();

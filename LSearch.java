@@ -21,7 +21,7 @@ class LSearch
         if(pos==-1)
         System.out.println(" num not found");
         else
-        System.out.println(" num  found="+arr[pos]+"at "+ pos);
+        System.out.println(" num  found=  "+arr[pos]+"at index number"+ pos);
     }
     public static void main()
     { LSearch obj=new LSearch();
